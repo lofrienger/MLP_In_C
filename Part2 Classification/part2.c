@@ -176,7 +176,7 @@ int main(int argc, char *argv[])
     printf("\nInitialize a network with %d inputs, %d hidden layer of %d neurons and %d output.\n",
            ann->inputs, ann->hidden_layers, ann->hidden, ann->outputs);
 
-    printf("\n***Training in progress...***\n");
+    printf("\nTraining in progress...\n");
 
     /* Train many times. */
     for (int i = 0; i < 5000; ++i)
@@ -187,7 +187,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    printf("\n***Training finished.***\n");
+    printf("\nTraining finished.\n");
 
     int Train_correct = 0, Test_correct = 0;
     for (int i = 0; i < Train_Total; i++)
